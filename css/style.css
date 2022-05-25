@@ -19,12 +19,6 @@ body
     font-size: 1.4rem;
 }
 
-.logo
-{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 500;
-}
-
 a
 {
     color: inherit;
@@ -42,6 +36,7 @@ ul
     list-style:none;
     padding:0
 }
+
 .container 
 {
     max-width:1400px;
@@ -50,7 +45,21 @@ ul
     padding : 0 15px
 }
 
+.container1 
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
 /* header */
+.logo
+{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+}
 #logo
 {
     display: flex;
@@ -154,8 +163,8 @@ ul
 {
     padding: 1rem;
 }
-
-.color:hover
+ 
+.fonctionnement:hover .color
 {
     color: #9356DC;
 }
@@ -176,6 +185,7 @@ article
     border-radius: 2rem;
     box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
     margin: 1rem;
+    position: relative;
 }
 .descript
 {
@@ -190,23 +200,42 @@ article
     gap: 1rem;
 }
 
-.nouveau
+.bannier
 {
     display: flex;
     font-weight: 700;
     padding: 0 1rem;
     background: #99e2d0;
-    position: absolute;
     border-radius: 0.2rem;
     color: #2c9c81;
-    line-height: 1rem;
+    line-height: 2rem;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  
 }
+
+.fa-heart
+{
+    font-size: large;
+    margin: 0 1rem 0 0;
+}
+
+.fa-heart:hover
+{
+    opacity: 1;
+    background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .description
 {
     display: flex;
     align-items: center;
     margin-bottom: -2rem;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 /* footer */
@@ -235,4 +264,93 @@ footer ul
 footer li
 {
     margin-bottom: 0.5rem;
+}
+
+@media (min-width: 992px)
+{
+
+}
+
+@media (max-width: 768px) 
+{
+    #form
+    {
+        padding: 1rem;
+        margin: 1rem 0 -2rem ;
+    }
+    #titre
+   {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       gap: 0;
+       width: 100%;
+   }
+   #presentation
+   {
+        background: #f2f2f2;
+        width: 100%;
+        align-items: center;
+        border-radius: 0;
+        padding: 0rem 2rem 2rem;
+   }
+
+   #reservez
+   {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+   }
+
+   #explorer
+   {
+       width: auto;
+   }
+   #fonctionnement
+   {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 0;
+       width: 100%;
+   }
+
+   #restaurant
+   {
+       background-color: #f2f2f2;
+       padding: 1rem 0;
+   }
+
+   #titre2
+   {
+        display: flex;
+        align-items: center; 
+   }
+   .restaurant
+   {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   article
+   {
+       width: 100%;
+       margin: 0;
+   }
+
+   footer h2
+   {
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+       margin: 0 0 2rem;
+   }
+
+   footer ul
+   {
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+   }
 }
