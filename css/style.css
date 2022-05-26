@@ -133,7 +133,11 @@ ul
     align-items: center;
     flex-direction: column;
     gap: 0;
-    width: 100%;
+}
+
+#fonctionnement h2
+{
+    margin: 2rem 26rem 1rem 0;
 }
 
 #fonctionnement ul
@@ -145,7 +149,7 @@ ul
     display: flex;
     align-items: center;
     padding: 0 0 0 5rem;
-    margin: 1rem 2rem 1rem 0;
+    margin: 0 0 3rem 0;
     border-radius: 1rem;
     box-shadow: 1rem 2rem 2rem 1rem #c4c4c4;
     background-color: #f2f2f2;
@@ -312,7 +316,7 @@ footer li
     {
         display: flex;
         flex-direction: inherit;
-        gap: 30rem;
+        gap: 8rem;
         margin: 2rem 0 2rem 15rem;
     }
 
@@ -320,12 +324,14 @@ footer li
     {
         padding: 1rem 2rem 2rem;
         border-radius: 3rem;
+        width: 130%;
     }
     
     #fonctionnement
     {
         display: flex;
-        align-items: baseline;
+        align-items: flex-start;
+        width: 200%;
     }
 
     /* restaurant */
