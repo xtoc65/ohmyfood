@@ -117,7 +117,7 @@ ul
     background: linear-gradient(170deg, #FF79DA, #9356DC);
     color: #fff;
     border-radius: 2rem;
-    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 0px 2rem 0px rgb(0 0 0 / 30%);
     padding: 1.5rem;
 }
 #explorer a
@@ -245,40 +245,44 @@ article img
     align-items: center;
     margin-bottom: -2rem;
     justify-content: space-between;
+    position: relative;
 }
 
 .descript
 {
     padding: 0 0 0 1rem;
+    
 }
 
 .fa-heart
 {
     font-size: large;
     margin: 0 1rem 0 0; 
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
 }
 
 .fa-heart:hover 
 {
-    opacity: 1;
-    /* définir une couleur d'arrière-plan. */
-    background-color: #FF79DA;
+    opacity: 100%;
     
     /* Créer le dégradé. */
-    background-image: linear-gradient(45deg,#FF79DA 50%,#9356DC 50%);
+    background-image: linear-gradient(0deg,#FF79DA,#9356DC );
     
-    /*Définir la taille d'arrière-plan et les propriétés de répétition */
-    background-size: 20%;
-    background-repeat: repeat;
-    background-position: top right;
-  
-    /* Utilise le texte comme masque pour l'arrière-plan. */
     /*affiche le dégradé comme une couleur de texte  */
-
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    /* -moz-background-clip: text; */
     -moz-text-fill-color: transparent;
+}
+
+.couleur:hover
+{
+    opacity: 100%;
+    background: linear-gradient(0deg,#FF79DA,#9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
  /* footer */
