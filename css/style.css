@@ -29,13 +29,13 @@ a
 label
 {
     position:absolute;
-    left:-999px
+    left:-999px;
 }
 
 ul 
 {
     list-style:none;
-    padding:0
+    padding:0;
 }
 
 .container 
@@ -43,7 +43,7 @@ ul
     max-width:1400px;
     width: 100%;
     margin: 0 auto; /*top et bottom : 0 left et right : 0*/
-    padding : 0 15px
+    padding : 0 15px;
 }
 
 .container1 
@@ -93,8 +93,6 @@ ul
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 0;
-    width: 100%;
 }
 
 #presentation
@@ -103,6 +101,7 @@ ul
     width: 100%;
     align-items: center;
     padding: 0rem 2rem 2rem;
+    margin-top: 2rem;
 }
 
 #reservez
@@ -325,26 +324,38 @@ footer li
     }
 
     /* debut page */
+    .container2 
+    {
+        max-width:1400px;
+        width: 100%;
+        margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+        padding : 0 15px;
+    }
     #titre
     {
         display: flex;
         flex-direction: inherit;
-        gap: 8rem;
-        margin: 2rem 0 2rem 15rem;
+        gap: 10rem;
+        margin-top: 3rem;
     }
 
     #presentation
     {
         padding: 1rem 2rem 2rem;
         border-radius: 3rem;
-        width: 130%;
+        width: 70%;
     }
     
     #fonctionnement
     {
         display: flex;
         align-items: flex-start;
-        width: 200%;
+        width: 78%;
+    }
+
+    #fonctionnement ul
+    {
+        width: inherit;
     }
 
     /* restaurant */
