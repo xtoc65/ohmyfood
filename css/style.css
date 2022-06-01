@@ -403,13 +403,17 @@ footer li
     }
     footer ul
     {
-        display: flex;
         align-items: center;
     }
 
-    footer li
+    .fa-utensils
     {
-        margin-bottom: 0.5rem;
+        margin-right: 0.5rem; 
+    }
+
+    .fa-hands-helping
+    {
+        margin-right: 0.5rem; 
     }
 
 }
