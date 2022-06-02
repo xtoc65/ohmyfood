@@ -361,6 +361,7 @@ footer li
 .fa-arrow-left
 {
     display: flex;
+    margin: 0 16rem 0 1rem;
 }
 
 .image
@@ -369,14 +370,18 @@ footer li
     width: 100%;
     object-fit: cover;
 }
-.fa-heart
+#h1
 {
-    font-size: large;
-    margin: 0 1rem 0 0; 
-    position: absolute;
-    top: 3rem;
-    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
+.heart
+{
+    top: 37rem;
+}
+
 @media (min-width: 768px)
 {
     
