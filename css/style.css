@@ -59,13 +59,20 @@ ul
     font-family: 'Shrikhand', cursive;
     font-weight: 500;
 }
-#logo
+
+#logo a
 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0 0.5rem;
 }
+
+#logo img
+{
+    width: 45%;
+}
+
 #form
 {
     display: flex;
@@ -87,6 +94,7 @@ ul
     padding: 1rem;
     font-size: 15px;
 }
+
 /* debut page */
 #titre
 {
@@ -102,6 +110,11 @@ ul
     align-items: center;
     padding: 0rem 2rem 2rem;
     margin-top: 2rem;
+}
+
+#reservez p, h1
+{
+    text-align: center;
 }
 
 #reservez
@@ -127,20 +140,21 @@ ul
 
 #fonctionnement
 {
-    display: flex;
     align-items: center;
     flex-direction: column;
     gap: 0;
+    padding: 1rem;
+    width: 85%;
 }
 
 #fonctionnement h2
 {
-    margin: 2rem 26rem 1rem 0;
+    /* margin: 2rem 26rem 1rem 0; */
 }
 
 #fonctionnement ul
 {
-    width: 50%;
+    width: 110%;
 }
 #fonctionnement li
 {
@@ -324,14 +338,84 @@ footer li
     margin-right: 1rem; 
 }
 
-@media (min-width: 992px)
+/* PAGE RESTAURANT */
+/* header restaurant */
+#logo1
 {
-
+    display: flex;
+    align-content: space-between;
+    padding: 2rem 0 0.5rem;
 }
 
-@media (min-width: 1440px) /*dekstop*/
+#logo1 a
+{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0.5rem;
+}
+
+#logo1 img
+{
+    width: 45%;
+}
+.fa-arrow-left
+{
+    display: flex;
+}
+
+.image
+{
+    height: 265px;
+    width: 100%;
+    object-fit: cover;
+}
+.fa-heart
+{
+    font-size: large;
+    margin: 0 1rem 0 0; 
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+@media (min-width: 768px)
+{
+    
+    /* debut page */
+    #fonctionnement
+    {
+        display: flex;
+        align-items: flex-start;
+        width: 60%;
+    }
+
+    /* restaurant */
+    article
+    {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .restaurant
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #restaurant
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;  
+    }
+}
+
+@media (min-width: 992px) /*dekstop*/
 { 
     /* header */
+    #logo img
+    {
+        width: 25%;
+    }
     #form
     {
         margin-top: 1rem;    
@@ -362,34 +446,12 @@ footer li
     
     #fonctionnement
     {
-        display: flex;
-        align-items: flex-start;
         width: 78%;
     }
 
     #fonctionnement ul
     {
         width: inherit;
-    }
-
-    /* restaurant */
-    article
-    {
-        width: 45%;
-        margin: 1rem;
-    }
-
-    .restaurant
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #restaurant
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;  
     }
 
     /* footer */
