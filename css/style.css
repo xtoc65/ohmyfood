@@ -70,7 +70,7 @@ ul
 
 #logo img
 {
-    width: 45%;
+    width: 60%;
 }
 
 #form
@@ -343,25 +343,30 @@ footer li
 #logo1
 {
     display: flex;
-    align-content: space-between;
-    padding: 2rem 0 0.5rem;
+    margin: 1rem 0;
 }
-
 #logo1 a
 {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0 0.5rem;
+}
+#logo1 i
+{
+    position: absolute;
+    left: 1rem;
 }
 
 #logo1 img
 {
-    width: 45%;
+    width: 60%;
+    position: relative;
+    left: 10rem;
 }
 .fa-arrow-left
 {
     display: flex;
-    margin: 0 16rem 0 1rem;
+    margin: 0 10rem 0 1rem;
 }
 
 .image
