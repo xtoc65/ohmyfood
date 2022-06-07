@@ -111,7 +111,10 @@ ul
     padding: 0rem 2rem 2rem;
     margin-top: 2rem;
 }
-
+h1
+{
+    font-family: 'shrikhand', sans-serif;
+}
 #reservez p, h1
 {
     text-align: center;
@@ -415,12 +418,21 @@ footer li
     box-shadow: 0 1px 5px 0 grey;
     border-radius: 2rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     height: 7rem;
 }
+
 h3
 {
     padding: 1rem 0 0 0;
 }
+
+.descript1 p
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width: 768px)
 {
     /* header */
