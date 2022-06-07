@@ -367,9 +367,10 @@ footer li
 /* Haut de page */
 .image
 {
-    height: 265px;
+    height: 280px;
     width: 100%;
     object-fit: cover;
+    position: relative;
 }
 #h1
 {
@@ -380,9 +381,25 @@ footer li
 }
 .heart
 {
-    top: 37rem;
+    top: 3rem;
 }
 /* Page restaurant */
+#carte
+{
+    background-color: #F6F6F6;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin-top: -5rem;
+    position: relative;
+    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
+    margin-bottom: 1rem;
+    z-index: 1;
+    padding-top: 1rem;
+}
+#carte fieldset
+{
+    border: none;
+}
 .resto input
 {
     position:absolute;
