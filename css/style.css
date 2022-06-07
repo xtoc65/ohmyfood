@@ -26,7 +26,7 @@ a
     text-decoration: none;
 }
 
-label
+.formulaire
 {
     position:absolute;
     left:-999px;
@@ -334,7 +334,7 @@ footer li
 }
 
 /* PAGE RESTAURANT */
-/* header restaurant */
+/* header */
 #logo1
 {
     display: flex;
@@ -364,7 +364,7 @@ footer li
     display: flex;
     margin: 0 10rem 0 1rem;
 }
-
+/* Haut de page */
 .image
 {
     height: 265px;
@@ -382,7 +382,13 @@ footer li
 {
     top: 37rem;
 }
-
+/* Page restaurant */
+.resto input
+{
+    position:absolute;
+    left:-999px;
+}
+    
 @media (min-width: 768px)
 {
     /* header */
