@@ -411,12 +411,16 @@ footer li
     margin-bottom: 1rem;
     position: inherit;
     font-size: inherit;
-    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
+    background-color: white;
+    box-shadow: 0 1px 5px 0 grey;
     border-radius: 2rem;
     padding-left: 2rem;
     height: 7rem;
 }
-
+h3
+{
+    padding: 1rem 0 0 0;
+}
 @media (min-width: 768px)
 {
     /* header */
