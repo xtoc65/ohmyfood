@@ -378,6 +378,7 @@ footer li
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding-top: 1rem;
 }
 .heart
 {
@@ -405,7 +406,17 @@ footer li
     position:absolute;
     left:-999px;
 }
-    
+.descript1
+{
+    margin-bottom: 1rem;
+    position: inherit;
+    font-size: inherit;
+    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
+    border-radius: 2rem;
+    padding-left: 2rem;
+    height: 7rem;
+}
+
 @media (min-width: 768px)
 {
     /* header */
