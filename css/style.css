@@ -400,16 +400,20 @@ footer li:hover
     background-color: #F6F6F6;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    margin-top: -5rem;
     position: relative;
     box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
     z-index: 1;
     padding-top: 1rem;
+    width: 100%;
+    margin: -5rem auto;
+    padding : 0 15px;
 }
+
 #carte fieldset
 {
     border: none;
 }
+
 legend
 {
     text-transform: uppercase;
@@ -436,7 +440,6 @@ legend
     border-radius: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 7rem;
 }
 
 h3
@@ -509,6 +512,17 @@ button:hover
         justify-content: space-between;
         align-items: stretch;  
     }
+     /* PAGE RESTAURANT */
+    .card
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desserts
+    {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 992px) /*dekstop*/
@@ -578,6 +592,25 @@ button:hover
     .fa-hands-helping
     {
         margin-right: 0.5rem; 
+    }
+    /* PAGE RESTAURANT */
+    /* header */
+    #logo1 img
+    {
+        width: 30%;
+        left: 70rem;
+    }
+    .card
+    {
+        display: inherit;
+    }
+    .carte
+    {
+        columns: 3;
+    }
+    button 
+    {
+        width: 10%;
     }
 
 }
