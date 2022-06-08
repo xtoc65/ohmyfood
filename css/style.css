@@ -111,10 +111,7 @@ ul
     padding: 0rem 2rem 2rem;
     margin-top: 2rem;
 }
-h1
-{
-    font-family: 'shrikhand', sans-serif;
-}
+
 #reservez p, h1
 {
     text-align: center;
@@ -387,6 +384,7 @@ footer li:hover
     justify-content: space-between;
     position: relative;
     padding-top: 1rem;
+    font-family: 'shrikhand', sans-serif;
 }
 .heart
 {
