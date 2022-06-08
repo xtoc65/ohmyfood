@@ -326,6 +326,11 @@ footer li
 {
     margin-bottom: 0.5rem;
 }
+footer li:hover
+{
+    color: #d1cde4;
+    
+}
 .fa-utensils
 {
    margin-right: 1.5rem; 
@@ -452,11 +457,14 @@ button
     color: white;
     border-radius: 2rem;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     margin: 2rem;
     font-size: large;
 }
-
+button:hover
+{
+    box-shadow: 0 1px 5px 0 grey;
+}
 @media (min-width: 768px)
 {
     /* header */
