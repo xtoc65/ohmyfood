@@ -414,6 +414,8 @@ legend
 {
     text-transform: uppercase;
     border-bottom: 0.3rem solid #99e2d0;
+    display: block;
+    width: 5%;
 }
 .resto
 {
