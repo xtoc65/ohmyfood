@@ -396,13 +396,20 @@ footer li
     margin-top: -5rem;
     position: relative;
     box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
-    margin-bottom: 1rem;
     z-index: 1;
     padding-top: 1rem;
 }
 #carte fieldset
 {
     border: none;
+}
+legend
+{
+    text-transform: uppercase;
+}
+.resto
+{
+    cursor: pointer;
 }
 .resto input
 {
@@ -431,6 +438,23 @@ h3
 {
     display: flex;
     justify-content: space-between;
+}
+
+.bouton
+{
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    font-size: large;
 }
 
 @media (min-width: 768px)
