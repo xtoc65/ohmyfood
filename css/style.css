@@ -369,6 +369,10 @@ footer li:hover
     display: flex;
     margin: 0 10rem 0 1rem;
 }
+.fa-arrow-left:hover
+{
+   color: #b360db;
+}
 /* Haut de page */
 .image
 {
@@ -410,7 +414,6 @@ legend
 {
     text-transform: uppercase;
     border-bottom: 0.3rem solid #99e2d0;
-    width: 50%;
 }
 .resto
 {
