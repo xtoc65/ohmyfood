@@ -513,6 +513,13 @@ button:hover
         align-items: stretch;  
     }
      /* PAGE RESTAURANT */
+     /* header */
+     #logo1 img
+     {
+         width: 40%;
+         left: 40%;
+     }
+     /* Formulaire */
     .card
     {
         display: flex;
@@ -544,6 +551,8 @@ button:hover
         width: 100%;
         columns: 3;
     }
+    
+    
 }
 
 @media (min-width: 992px) /*dekstop*/
@@ -619,16 +628,19 @@ button:hover
     #logo1 img
     {
         width: 30%;
-        left: 70rem;
+        left: 40%;
     }
     .card
     {
-        justify-content: inherit;
+        /* justify-content: inherit; */
+        /* margin: 0 -2rem; */
     }
     .carte
     {
-        columns: 3;
+        display: flex;
+        justify-content: center;
     }
+
     button 
     {
         width: 10%;
@@ -636,6 +648,7 @@ button:hover
     .descript2
     {
         padding: 0 2rem ;
+        height: inherit;
     }
     .desserts
     {
