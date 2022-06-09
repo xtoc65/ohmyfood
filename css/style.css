@@ -519,9 +519,30 @@ button:hover
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .descript2
+    {
+        width: 100%;
+        padding: 0 0.5rem 0.5rem 1rem;
+        height: 8rem;
+    }
+    #box
+    {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .box
+    {
+        width: 100%;
+    }
     .desserts
     {
-        flex-direction: row;
+        flex-direction: row;        
+        width: 100%;
+        columns: 3;
     }
 }
 
@@ -602,7 +623,7 @@ button:hover
     }
     .card
     {
-        display: inherit;
+        justify-content: inherit;
     }
     .carte
     {
@@ -611,5 +632,18 @@ button:hover
     button 
     {
         width: 10%;
+    }
+    .descript2
+    {
+        padding: 0 2rem ;
+    }
+    .desserts
+    {
+        columns:inherit;
+    }
+    #box
+    {
+        display: inherit;
+
     }
 }
