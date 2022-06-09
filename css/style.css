@@ -625,6 +625,10 @@ button:hover
     }
     /* PAGE RESTAURANT */
     /* header */
+    #h1
+    {
+        justify-content: center;
+    }
     #logo1 img
     {
         width: 30%;
