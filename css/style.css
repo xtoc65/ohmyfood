@@ -519,7 +519,12 @@ button:hover
          width: 40%;
          left: 40%;
      }
+
      /* Formulaire */
+     #h1
+     {
+         justify-content: center;
+     }
      legend
      {
          width: 10%;
