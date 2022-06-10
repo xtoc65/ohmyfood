@@ -520,6 +520,10 @@ button:hover
          left: 40%;
      }
      /* Formulaire */
+     legend
+     {
+         width: 10%;
+     }
     .card
     {
         display: flex;
@@ -541,9 +545,19 @@ button:hover
         justify-content: flex-start;
         flex-direction: row;
     }
-    .box
+    .box1
+    {
+        width: 75%;
+    }
+    .box2
+    {
+        width: 120%;
+        margin: 0 0 0 -6rem;
+    }
+    .box3
     {
         width: 100%;
+        margin: 0 0 0 -1rem;
     }
     .desserts
     {
@@ -551,6 +565,7 @@ button:hover
         width: 100%;
         columns: 3;
     }
+   
     
     
 }
