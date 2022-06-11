@@ -158,7 +158,7 @@ ul
     padding: 0 0 0 5rem;
     margin: 0 0 3rem 0;
     border-radius: 1rem;
-    box-shadow: 1rem 1rem 1rem 1rem #c4c4c4;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #c4c4c4;
     background-color: #f2f2f2;
     gap: 1rem;
     height: 6rem;
@@ -421,25 +421,24 @@ legend
     display: block;
     width: 5%;
 }
+
 .resto
 {
     cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 30%);
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    position: inherit;
+    font-size: inherit;
 }
+
 .resto input
 {
     position:absolute;
     left:-999px;
-}
-.descript1
-{
-    margin-bottom: 1rem;
-    position: inherit;
-    font-size: inherit;
-    background-color: white;
-    box-shadow: 0 1px 5px 0 grey;
-    border-radius: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 h3
@@ -453,25 +452,27 @@ h3
     justify-content: space-between;
 }
 
+.fa-check-circle
+{
+    display: none;
+}
 .bouton
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 button
 {
     border: none;
     color: white;
     border-radius: 2rem;    
-    padding: 0.5em 0;
+    padding: 0.8em;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-box-shadow: 0 0 16px grey;
     box-shadow: 0 0 16px grey;
     margin: 1em auto 5rem;
     cursor: pointer;
-    width: 20%;
-    height: 4rem;
+    width: 40%;
 }
 button:hover
 {
@@ -521,57 +522,23 @@ button:hover
      }
 
      /* Formulaire */
-     #h1
-     {
-         justify-content: center;
-     }
-     legend
-     {
+    #h1
+    {
+        justify-content: center;
+    }    
+    .carte
+    {
+        display: flex;
+        justify-content: center;
+    }
+    legend
+    {
          width: 10%;
-     }
-    .card
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
-    .descript2
+    button 
     {
-        width: 100%;
-        padding: 0 0.5rem 0.5rem 1rem;
-        height: 8rem;
+        width: 15%;
     }
-    #box
-    {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        flex-direction: row;
-    }
-    .box1
-    {
-        width: 75%;
-    }
-    .box2
-    {
-        width: 120%;
-        margin: 0 0 0 -6rem;
-    }
-    .box3
-    {
-        width: 100%;
-        margin: 0 0 0 -1rem;
-    }
-    .desserts
-    {
-        flex-direction: row;        
-        width: 100%;
-        columns: 3;
-    }
-   
-    
     
 }
 
@@ -653,16 +620,6 @@ button:hover
     {
         width: 30%;
         left: 40%;
-    }
-    .card
-    {
-        /* justify-content: inherit; */
-        /* margin: 0 -2rem; */
-    }
-    .carte
-    {
-        display: flex;
-        justify-content: center;
     }
 
     button 
