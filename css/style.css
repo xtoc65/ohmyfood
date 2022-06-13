@@ -440,14 +440,13 @@ legend
     width: 5%;
 }
 
-.resto
+.card
 {
     cursor: pointer;
     background-color: var(--blanc);
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 30%);
     border-radius: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
     margin-bottom: 1rem;
     position: inherit;
     font-size: inherit;
