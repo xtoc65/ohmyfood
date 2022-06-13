@@ -19,13 +19,12 @@
 
         <main>
             <img src="image/restaurants/enchantee.jpg" alt="enchantee" class="image">
-            <div class="container">
+            <div id="carte">
                 <h1 id="h1">La note enchantée</h1>
                 <i class="far fa-heart heart"></i>
                 <i class="far fa-heart heart couleur"></i> 
-                <div class="carte">
-                    <form>
-                                    
+                <form>
+                    <div class="carte">                
                         <fieldset>
                             <div>
                                 <legend>
@@ -34,8 +33,10 @@
 
                                 <label class="resto">
                                     <input type="checkbox">
-                                    <h3>Ravioles de foie gras</h3>
-                                    <p>Accompagnés de leur crème à la truffe <strong>25€</strong></p>
+                                    <div class="descript1">
+                                        <h3>Ravioles de foie gras</h3>
+                                        <p>Accompagnés de leur crème à la truffe <strong>25€</strong></p>
+                                    </div>
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span> 
@@ -43,8 +44,10 @@
 
                                 <label class="resto">
                                     <input type="checkbox">
-                                        <h3>Caviar osciètre</h3>
-                                        <p>Sur blini à la farine de blé noir <strong>35€</strong></p>
+                                        <div class="descript1">
+                                            <h3>Caviar osciètre</h3>
+                                            <p>Sur blini à la farine de blé noir <strong>35€</strong></p>
+                                        </div>
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span> 
@@ -52,8 +55,10 @@
                                 
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Homard et espuma de potiron</h3>
-                                        <p>Mariné aux zestes d'orange <strong>20€</strong></p>
+                                        <p>Mariné aux zestes d'orange <strong>20€</strong></p> 
+                                    </div>                                        
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span> 
@@ -61,8 +66,10 @@
                                 
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Foie gras de canard cuit entier</h3>
-                                        <p>Confiture de figue et pain toasté <strong>35€</strong></p>
+                                        <p>Confiture de figue et pain toasté <strong>35€</strong></p>    
+                                    </div>                                        
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span> 
@@ -79,8 +86,10 @@
 
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Noix de coquilles Saint-Jacques</h3>
-                                        <p>Sur lit de purée de céleri-rave <strong>40€</strong></p>
+                                        <p>Sur lit de purée de céleri-rave <strong>40€</strong></p>    
+                                    </div>                                        
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span>     
@@ -88,18 +97,22 @@
                                 
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Langoustine poêlée</h3> 
-                                        <p>Purée de patate douce <strong>35€</strong></p> 
+                                        <p>Purée de patate douce <strong>35€</strong></p>    
+                                    </div>                                         
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span>     
                                 </label>
                             
                                 
-                            <label class="resto">
+                                <label class="resto">
                                 <input type="checkbox">
+                                <div class="descipt1">
                                     <h3>Mijoté de queue de boeuf</h3>
-                                    <p>Et riz sauvage aux zestes de citron <strong>44€</strong></p>
+                                    <p>Et riz sauvage aux zestes de citron <strong>44€</strong></p>    
+                                </div>                                    
                                 <span>
                                     <i class="far fa-check-circle"></i>
                                 </span>     
@@ -108,41 +121,49 @@
                         </fieldset>
                         
                         <fieldset>
-                            <div>
 
                                 <legend>
                                     Desserts   
                                 </legend>
                                 <label class="resto">
                                     <input type="checkbox">
-                                    <h3>Macaron noisette et chocolat</h3>
-                                    <p>Glace au caramel brun et sel de Guérande <strong>18€</strong></p> 
+                                    <div class="descipt1">
+                                        <h3>Macaron noisette et chocolat</h3>
+                                        <p>Glace au caramel brun et sel de Guérande <strong>18€</strong></p>     
+                                    </div>                                   
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span>   
                                 </label>
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Baba au rhum revisité</h3>
                                         <p>Avec son coulis de citron <strong>22€</strong></p>
+                                    </div>                                        
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span>   
                                 </label>
                                 <label class="resto">
                                     <input type="checkbox">
+                                    <div class="descipt1">
                                         <h3>Tarte au citron meringuée</h3>
                                         <p>Déstructurée <strong>23€</strong></p>
+                                    </div>                                        
                                     <span>
                                         <i class="far fa-check-circle"></i>
                                     </span>   
                                 </label>
-                            </div>
                         </fieldset>
-                        <button type="submit">Commander</button>
-                    </form>
+                    </div>
+                        
+                        <div class="bouton">
+                            <button type="submit">Commander</button> 
+                        </div>
+                </form>
 
-                </div>
+               
                 
             </div>
         </main>
