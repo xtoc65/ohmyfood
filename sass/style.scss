@@ -19,6 +19,46 @@
     --vertclaire: #99E2D0; 
 }
 
+%display1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%display2
+{
+    display: flex;
+    justify-content: center; 
+}
+%display3
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+%display4
+{
+    display: flex;
+    align-items: center;   
+}
+%display5
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+%display6
+{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+%display7
+{
+    display: flex;
+    justify-content: space-between;
+}
 /**GLOBAL**/
 html 
 {
@@ -82,9 +122,7 @@ ul
 {
     a
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %display1;
         padding: 2rem 0 0.5rem;  
     }
     img
@@ -94,8 +132,7 @@ ul
 }
 #form
 {
-    display: flex;
-    justify-content: center;    
+    @extend %display2;  
     background: var(--grey);
     box-shadow: 0 0.2em 0.5em grey inset;
     padding: 1rem;
@@ -116,10 +153,8 @@ ul
 
 /* debut page */
 #titre
-{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+{    
+    @extend %display3;
 }
 
 #presentation
@@ -133,9 +168,7 @@ ul
 
 #reservez
 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @extend %display3;
     p, h1
     {
         text-align: center;
@@ -170,8 +203,7 @@ ul
 
     li
     {
-        display: flex;
-        align-items: center;
+        @extend %display4;
         padding: 0 0 0 5rem;
         margin: 0 0 3rem 0;
         border-radius: 1rem;
@@ -222,15 +254,12 @@ ul
 
 #titre2
 {
-    display: flex;
-    align-items: center; 
+    @extend %display4;
 }
 
 .restaurant
 {
-     display: flex;
-     flex-direction: column;
-     align-items: center;       
+    @extend %display3;
      margin-bottom: 2rem;
      gap: 3rem;
 }
@@ -269,10 +298,8 @@ article
 
 .description
 {
-    display: flex;
-    align-items: center;
+    @extend %display5;
     margin-bottom: -2rem;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -324,17 +351,13 @@ footer
 
     h2
     {  
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+        @extend %display6;
         margin: 0 0 2rem;
     }
 
     ul
     {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;    
+        @extend %display6;    
         margin: auto;
     }
 
@@ -368,9 +391,7 @@ footer
     margin: 1rem 0;
     a
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %display1;
     }
 
     i
@@ -409,9 +430,7 @@ footer
 }
 #h1
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %display5;
     position: relative;
     padding-top: 1rem;
     font-family: 'shrikhand', sans-serif;
@@ -474,8 +493,8 @@ h3
 
 .descript1 p
 {
-    display: flex;
-    justify-content: space-between;
+    @extend %display7;
+    
 }
 
 .fa-check-circle
@@ -537,8 +556,7 @@ button
     }
     #restaurant
     {
-        display: flex;
-        justify-content: space-between;
+        @extend %display7;
         align-items: stretch;  
     }
      /* PAGE RESTAURANT */
@@ -556,8 +574,7 @@ button
     }    
     .carte
     {
-        display: flex;
-        justify-content: center;
+        @extend %display2;
     }
     legend
     {
@@ -621,8 +638,7 @@ button
     {
         h2
         {
-            display: flex;
-            justify-content: center;  
+            @extend %display2; 
             flex-direction: inherit;
             margin: 0 0 0.5rem 1rem;    
         }
