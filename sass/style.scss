@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root
+{
+    --mauve : #d1cde4;
+    --violetclaire: #b360db;
+    --violet: #9356dc;
+    --rose: #ff79da;
+    --roseclaire: #F2EAFB;
+    --rosepastel: #ce6fb1fa;
+    --grismoyen: #f2f2f2;    
+    --grisclaire: #f6f6f6;
+    --gris: #c4c4c4;
+    --grey: #eaeaea;
+    --blanc: white;
+    --noir: #353535;    
+    --vert: #2c9c81;
+    --vertclaire: #99E2D0; 
+}
+
+/**GLOBAL**/
+html 
+{
+    font-size: 62.5%;
+}
+
+* 
+{
+    box-sizing: border-box ;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    line-height: normal; 
+    display: block;
+    font-size: 1.4rem;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.formulaire
+{
+    position:absolute;
+    left:-999px;
+}
+
+ul 
+{
+    list-style:none;
+    padding:0;
+}
+
+.container 
+{
+    max-width:1400px;
+    width: 100%;
+    margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+    padding : 0 15px;
+}
+
+.container1 
+{
+    position: relative;
+    text-align: center;
+    color: var(--blanc);
+}
+
+ /* header */
+.logo
+{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+}
+
+#logo
+{
+    a
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 0.5rem;  
+    }
+    img
+    {
+        width: 60%;
+    }
+}
+#form
+{
+    display: flex;
+    justify-content: center;    
+    background: var(--grey);
+    box-shadow: 0 0.2em 0.5em grey inset;
+    padding: 1rem;
+    margin: 1rem 0 -2rem ;
+}
+
+#search
+{
+    border: none;
+    font-size: 1.5rem;
+    background: var(--grey);
+}
+.fa-map-marker-alt
+{
+    padding: 1rem;
+    font-size: 15px;
+}
+
+/* debut page */
+#titre
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#presentation
+{
+    background: var(--grismoyen);
+    width: 100%;
+    align-items: center;
+    padding: 0rem 2rem 2rem;
+    margin-top: 2rem;
+}
+
+#reservez
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p, h1
+    {
+        text-align: center;
+    }
+}
+
+#explorer
+{
+    width: auto;
+    background: linear-gradient(170deg, var(--rose), var(--violet));
+    color: var(--blanc);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 2rem 0px rgb(0 0 0 / 30%);
+    padding: 1.5rem;
+    a
+    {
+        margin-left: 1rem;
+    }
+}
+
+#fonctionnement
+{
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+    width: 85%;
+    ul
+    {
+        width: 110%;
+    }
+
+    li
+    {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 5rem;
+        margin: 0 0 3rem 0;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem var(--gris);
+        background-color: var(--grismoyen);
+        gap: 1rem;
+        height: 6rem;
+    }
+
+    ul li:hover
+    {
+        background: var(--roseclaire);
+    }
+}
+
+.nombre
+{
+    background-color: var(--violet);
+    color: var(--blanc);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-left: -7rem;
+}
+
+.fa-mobile-alt, .fa-list-ul, .fa-store
+{
+    padding: 1rem;
+}
+
+.fonctionnement:hover .color
+{
+    color: var(--violet);
+}
+
+/* restaurants */
+#restaurant
+{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    background-color: var(--grismoyen);
+    padding: 1rem 0;        
+}
+
+#titre2
+{
+    display: flex;
+    align-items: center; 
+}
+
+.restaurant
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;       
+     margin-bottom: 2rem;
+     gap: 3rem;
+}
+
+article
+{
+    width: 100%;
+    background-color: var(--blanc);
+    border-radius: 2rem;
+    box-shadow: 0 0 3rem 0 rgb(0 0 0 / 30%);
+    position: relative;
+
+    img
+    {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+}
+
+.bannier
+{
+    display: flex;
+    font-weight: 700;
+    padding: 0 1rem;
+    background: var(--vertclaire);
+    border-radius: 0.2rem;
+    color: var(--vert);
+    line-height: 2rem;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    
+}
+
+.description
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: -2rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.descript
+{
+    padding: 0 0 0 1rem;
+    font-size: large;    
+}
+
+.fa-heart
+{
+    font-size: x-large;
+    margin: 0 1rem 0 0; 
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+
+    :hover 
+    {
+        opacity: 100%;
+        
+        /* Créer le dégradé. */
+        background-image: linear-gradient(0deg,var(--rose),var(--violet) );
+        
+        /*affiche le dégradé comme une couleur de texte  */
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+}
+
+.couleur:hover
+{
+    opacity: 100%;
+    background: linear-gradient(0deg,var(--rose),var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+ /* footer */
+
+footer
+{
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 2rem;
+
+    h2
+    {  
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0 0 2rem;
+    }
+
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;    
+        margin: auto;
+    }
+
+    li
+    {
+        margin-bottom: 0.5rem;
+    }
+
+    li:hover
+    {
+        color: var(--mauve);
+        
+    }
+}
+
+.fa-utensils
+{
+   margin-right: 1.5rem; 
+}
+
+.fa-hands-helping
+{
+    margin-right: 1rem; 
+}
+
+/* PAGE RESTAURANT */
+/* header */
+#logo1
+{
+    display: flex;
+    margin: 1rem 0;
+    a
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i
+    {
+        font-size: 2rem;
+        position: absolute;
+        left: 1rem;
+    }
+
+    img
+    {
+        width: 60%;
+        position: relative;
+        left: 10rem;
+    }
+}
+
+.fa-arrow-left
+{
+    display: flex;
+    margin: 0 10rem 0 1rem;
+
+    :hover
+    {
+    color: var(--violetclaire);
+    }
+}
+
+/* Haut de page */
+.image
+{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+#h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 1rem;
+    font-family: 'shrikhand', sans-serif;
+}
+.heart
+{
+    top: 3rem;
+}
+/* Page restaurant */
+#carte
+{
+    background-color: var(--grisclaire);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    position: relative;
+    box-shadow: 0 0 5rem 0 rgb(0 0 0 / 30%);
+    z-index: 1;
+    padding-top: 1rem;
+    width: 100%;
+    margin: -5rem auto;
+    padding : 0 15px;
+
+    fieldset
+    {
+        border: none;
+    }
+
+}
+
+legend
+{
+    text-transform: uppercase;
+    border-bottom: 0.3rem solid var(--vertclaire);
+    display: block;
+    width: 5%;
+}
+
+.card
+{
+    cursor: pointer;
+    background-color: var(--blanc);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 30%);
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    position: inherit;
+    font-size: inherit;
+}
+
+.resto input
+{
+    position:absolute;
+    left:-999px;
+}
+
+h3
+{
+    padding: 1rem 0 0 0;
+}
+
+.descript1 p
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-check-circle
+{
+    display: none;
+}
+.bouton
+{
+    text-align: center;
+}
+button
+{
+    border: none;
+    color: var(--blanc);
+    border-radius: 2rem;    
+    padding: 0.8em;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--rose)), to(var(--violet)));
+    background: linear-gradient(var(--rose),var(--violet));
+    -webkit-box-shadow: 0 0 16px grey;
+    box-shadow: 0 0 16px grey;
+    margin: 1em auto 5rem;
+    cursor: pointer;
+    width: 40%;
+
+    :hover
+    {
+        background: var(--rosepastel);
+        box-shadow: 0 1px 5px 0 grey;
+    }
+}
+
+@media (min-width: 768px)
+{
+    /* header */
+    #logo img
+    {
+        width: 45%;
+    }
+    /* debut page */
+    #fonctionnement
+    {
+        display: flex;
+        align-items: flex-start;
+        width: 60%;
+    }
+
+    /* restaurant */
+    article
+    {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .restaurant
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #restaurant
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;  
+    }
+     /* PAGE RESTAURANT */
+     /* header */
+     #logo1 img
+     {
+         width: 40%;
+         left: 40%;
+     }
+
+     /* Formulaire */
+    #h1
+    {
+        justify-content: center;
+    }    
+    .carte
+    {
+        display: flex;
+        justify-content: center;
+    }
+    legend
+    {
+         width: 10%;
+    }
+    button 
+    {
+        width: 15%;
+    }
+    
+}
+
+@media (min-width: 992px) /*dekstop*/
+{ 
+    /* header */
+    #logo img
+    {
+        width: 20%;
+    }
+    #form
+    {
+        margin-top: 1rem;    
+    }
+
+    /* debut page */
+    .container2 
+    {
+        max-width:1400px;
+        width: 100%;
+        margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+        padding : 0 15px;
+    }
+    #titre
+    {
+        display: flex;
+        flex-direction: inherit;
+        gap: 10rem;
+        margin-top: 3rem;
+    }
+
+    #presentation
+    {
+        padding: 1rem 2rem 2rem;
+        border-radius: 3rem;
+        width: 70%;
+    }
+    
+    #fonctionnement
+    {
+        width: 78%;
+
+        ul
+        {
+            width: inherit;
+        }
+    }
+
+    /* footer */
+
+    footer
+    {
+        h2
+        {
+            display: flex;
+            justify-content: center;  
+            flex-direction: inherit;
+            margin: 0 0 0.5rem 1rem;    
+        }
+         
+        ul
+        {
+            align-items: center;
+        }
+    }
+
+    .fa-utensils
+    {
+        margin-right: 0.5rem; 
+    }
+
+    .fa-hands-helping
+    {
+        margin-right: 0.5rem; 
+    }
+    /* PAGE RESTAURANT */
+    /* header */
+    #h1
+    {
+        justify-content: center;
+    }
+    #logo1 img
+    {
+        width: 30%;
+        left: 40%;
+    }
+
+    button 
+    {
+        width: 10%;
+    }
+    .descript2
+    {
+        padding: 0 2rem ;
+        height: inherit;
+    }
+    .desserts
+    {
+        columns:inherit;
+    }
+    #box
+    {
+        display: inherit;
+
+    }
+}
