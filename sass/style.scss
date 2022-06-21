@@ -183,6 +183,13 @@ ul
     border-radius: 2rem;
     box-shadow: 0px 0px 2rem 0px rgb(0 0 0 / 30%);
     padding: 1.5rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover 
+    {
+        transform: scale(1.05);
+    }
     a
     {
         margin-left: 1rem;
@@ -316,9 +323,12 @@ article
     position: absolute;
     top: 3rem;
     right: 1rem;
-
-    :hover 
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover 
     {
+        transform: scale(1.15);
         opacity: 100%;
         
         /* Créer le dégradé. */
@@ -434,10 +444,6 @@ footer
     position: relative;
     padding-top: 1rem;
     font-family: 'shrikhand', sans-serif;
-}
-.heart
-{
-    top: 3rem;
 }
 /* Page restaurant */
 #carte
@@ -556,7 +562,9 @@ button
     }
     #restaurant
     {
-        @extend %display7;
+        // @extend %display7;
+        display: flex;
+        justify-content: space-between;
         align-items: stretch;  
     }
      /* PAGE RESTAURANT */
@@ -574,7 +582,9 @@ button
     }    
     .carte
     {
-        @extend %display2;
+        // @extend %display2;
+        display: flex;
+        justify-content: center; 
     }
     legend
     {
@@ -638,7 +648,9 @@ button
     {
         h2
         {
-            @extend %display2; 
+            // @extend %display2; 
+            display: flex;
+            justify-content: center; 
             flex-direction: inherit;
             margin: 0 0 0.5rem 1rem;    
         }
