@@ -203,6 +203,7 @@ ul
     gap: 0;
     padding: 1rem;
     width: 85%;
+    
     ul
     {
         width: 110%;
@@ -222,7 +223,14 @@ ul
 
     ul li:hover
     {
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
         background: var(--roseclaire);
+            &:hover 
+            {
+                transform: scale(1.05);
+            }        
     }
 }
 
@@ -484,6 +492,13 @@ legend
     margin-bottom: 1rem;
     position: inherit;
     font-size: inherit;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover 
+    {
+        transform: scale(1.05);
+    }
 }
 
 .resto input

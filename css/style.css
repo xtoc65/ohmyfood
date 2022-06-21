@@ -183,7 +183,13 @@ ul {
   height: 6rem;
 }
 #fonctionnement ul li:hover {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
   background: var(--roseclaire);
+}
+#fonctionnement ul li:hover:hover {
+  transform: scale(1.05);
 }
 
 .nombre {
@@ -384,6 +390,12 @@ legend {
   margin-bottom: 1rem;
   position: inherit;
   font-size: inherit;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 
 .resto input {
