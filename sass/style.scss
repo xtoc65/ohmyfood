@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-:root
-{
-    --mauve : #d1cde4;
-    --violetclaire: #b360db;
-    --violet: #9356dc;
-    --rose: #ff79da;
-    --roseclaire: #F2EAFB;
-    --rosepastel: #ce6fb1fa;
-    --grismoyen: #f2f2f2;    
-    --grisclaire: #f6f6f6;
-    --gris: #c4c4c4;
-    --grey: #eaeaea;
-    --blanc: white;
-    --noir: #353535;    
-    --vert: #2c9c81;
-    --vertclaire: #99E2D0; 
-}
+// couleurs
+
+    $mauve : #d1cde4;
+    $violetclaire: #b360db;
+    $violet: #9356dc;
+    $rose: #ff79da;
+    $roseclaire: #F2EAFB;
+    $rosepastel: #ce6fb1fa;
+    $grismoyen: #f2f2f2;    
+    $grisclaire: #f6f6f6;
+    $gris: #c4c4c4;
+    $grey: #eaeaea;
+    $blanc: white;
+    $noir: #353535;    
+    $vert: #2c9c81;
+    $vertclaire: #99E2D0; 
+
 
 %display1
 {
@@ -78,6 +78,7 @@ body
     font-size: 1.4rem;
 }
 
+
 a
 {
     color: inherit;
@@ -108,7 +109,7 @@ ul
 {
     position: relative;
     text-align: center;
-    color: var(--blanc);
+    color: $blanc;
 }
 
  /* header */
@@ -127,13 +128,14 @@ ul
     }
     img
     {
-        width: 60%;
+        width: 45%;
     }
 }
+
 #form
 {
     @extend %display2;  
-    background: var(--grey);
+    background: $grey;
     box-shadow: 0 0.2em 0.5em grey inset;
     padding: 1rem;
     margin: 1rem 0 -2rem ;
@@ -143,7 +145,7 @@ ul
 {
     border: none;
     font-size: 1.5rem;
-    background: var(--grey);
+    background: $grey;
 }
 .fa-map-marker-alt
 {
@@ -159,7 +161,7 @@ ul
 
 #presentation
 {
-    background: var(--grismoyen);
+    background: $grismoyen;
     width: 100%;
     align-items: center;
     padding: 0rem 2rem 2rem;
@@ -178,8 +180,8 @@ ul
 #explorer
 {
     width: auto;
-    background: linear-gradient(170deg, var(--rose), var(--violet));
-    color: var(--blanc);
+    background: linear-gradient(170deg, $rose, $violet);
+    color: $blanc;
     border-radius: 2rem;
     box-shadow: 0px 0px 2rem 0px rgb(0 0 0 / 30%);
     padding: 1.5rem;
@@ -215,8 +217,8 @@ ul
         padding: 0 0 0 5rem;
         margin: 0 0 3rem 0;
         border-radius: 1rem;
-        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem var(--gris);
-        background-color: var(--grismoyen);
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $gris;
+        background-color: $grismoyen;
         gap: 1rem;
         height: 6rem;
     }
@@ -226,7 +228,7 @@ ul
         transform: scale(1);
         transition-property: transform;
         transition-duration: 400ms;
-        background: var(--roseclaire);
+        background: $roseclaire;
             &:hover 
             {
                 transform: scale(1.05);
@@ -236,8 +238,8 @@ ul
 
 .nombre
 {
-    background-color: var(--violet);
-    color: var(--blanc);
+    background-color: $violet;
+    color: $blanc;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 2rem;
     margin-left: -7rem;
@@ -250,7 +252,7 @@ ul
 
 .fonctionnement:hover .color
 {
-    color: var(--violet);
+    color: $violet;
 }
 
 /* restaurants */
@@ -263,7 +265,7 @@ ul
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem; 
-    background-color: var(--grismoyen);
+    background-color: $grismoyen;
     padding: 1rem 0;        
 }
 
@@ -282,7 +284,7 @@ ul
 article
 {
     width: 100%;
-    background-color: var(--blanc);
+    background-color: $blanc;
     border-radius: 2rem;
     box-shadow: 0 0 3rem 0 rgb(0 0 0 / 30%);
     position: relative;
@@ -301,9 +303,9 @@ article
     display: flex;
     font-weight: 700;
     padding: 0 1rem;
-    background: var(--vertclaire);
+    background: $vertclaire;
     border-radius: 0.2rem;
-    color: var(--vert);
+    color: $vert;
     line-height: 2rem;
     position: absolute;
     top: 8px;
@@ -340,7 +342,7 @@ article
         opacity: 100%;
         
         /* Créer le dégradé. */
-        background-image: linear-gradient(0deg,var(--rose),var(--violet) );
+        background-image: linear-gradient(0deg,$rose,$violet);
         
         /*affiche le dégradé comme une couleur de texte  */
         -webkit-background-clip: text; 
@@ -353,7 +355,7 @@ article
 .couleur:hover
 {
     opacity: 100%;
-    background: linear-gradient(0deg,var(--rose),var(--violet));
+    background: linear-gradient(0deg,$rose,$violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -363,10 +365,10 @@ article
 
 footer
 {
-    background-color: var(--noir);
-    color: var(--blanc);
-    padding: 2rem;
-
+    background-color: $noir;
+    color: $blanc;
+    padding: 6rem 0 2rem;
+    position: relative;
     h2
     {  
         @extend %display6;
@@ -386,9 +388,17 @@ footer
 
     li:hover
     {
-        color: var(--mauve);
+        color: $mauve;
         
     }
+}
+#pad
+{
+    padding: 2rem 0 2rem;
+}
+.paddinglogo
+{
+    padding: 6rem;
 }
 
 .fa-utensils
@@ -421,9 +431,9 @@ footer
 
     img
     {
-        width: 60%;
+        width: 45%;
         position: relative;
-        left: 10rem;
+        left: 15rem;
     }
 }
 
@@ -434,7 +444,7 @@ footer
 
     :hover
     {
-    color: var(--violetclaire);
+    color: $violetclaire;
     }
 }
 
@@ -452,11 +462,12 @@ footer
     position: relative;
     padding-top: 1rem;
     font-family: 'shrikhand', sans-serif;
+    font-weight: inherit;
 }
 /* Page restaurant */
 #carte
 {
-    background-color: var(--grisclaire);
+    background-color: $grisclaire;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     position: relative;
@@ -477,18 +488,20 @@ footer
 legend
 {
     text-transform: uppercase;
-    border-bottom: 0.3rem solid var(--vertclaire);
+    border-bottom: 0.3rem solid $vertclaire;
     display: block;
     width: 5%;
+    margin: 0 0 1rem 0;
 }
+
 
 .card
 {
     cursor: pointer;
-    background-color: var(--blanc);
+    background-color: $blanc;
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 30%);
     border-radius: 2rem;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0 1rembb;
     margin-bottom: 1rem;
     position: inherit;
     font-size: inherit;
@@ -509,14 +522,19 @@ legend
 
 h3
 {
-    padding: 1rem 0 0 0;
+    margin: 0 0 1rem 0;
 }
 
-.descript1 p
+.descript1 
 {
-    @extend %display7;
-    
+    padding: 0.6rem 0.5rem;
+    p
+    {
+        @extend %display7;
+        margin: 0;
+    } 
 }
+
 
 .fa-check-circle
 {
@@ -529,11 +547,11 @@ h3
 button
 {
     border: none;
-    color: var(--blanc);
+    color: $blanc;
     border-radius: 2rem;    
     padding: 0.8em;
     background: -webkit-gradient(linear, left top, left bottom, from(var(--rose)), to(var(--violet)));
-    background: linear-gradient(var(--rose),var(--violet));
+    background: linear-gradient($rose,$violet);
     -webkit-box-shadow: 0 0 16px grey;
     box-shadow: 0 0 16px grey;
     margin: 1em auto 5rem;
@@ -542,7 +560,7 @@ button
 
     :hover
     {
-        background: var(--rosepastel);
+        background: $rosepastel;
         box-shadow: 0 1px 5px 0 grey;
     }
 }
@@ -577,7 +595,6 @@ button
     }
     #restaurant
     {
-        // @extend %display7;
         display: flex;
         justify-content: space-between;
         align-items: stretch;  
@@ -597,7 +614,6 @@ button
     }    
     .carte
     {
-        // @extend %display2;
         display: flex;
         justify-content: center; 
     }
@@ -663,7 +679,6 @@ button
     {
         h2
         {
-            // @extend %display2; 
             display: flex;
             justify-content: center; 
             flex-direction: inherit;
