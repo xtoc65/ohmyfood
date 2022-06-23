@@ -85,26 +85,27 @@ ul {
 }
 
 .loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100vh;
   background: #353535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
   animation: loader 1000ms 4000ms ease-in-out forwards;
 }
-.loader.word {
+.loader .word {
   font-family: "Shrikhand", sans-serif;
-  font-size: 3em;
-  -webkit-animation: words 3000ms both;
-  animation: words 3000ms both;
+  font-size: 5rem;
+  animation: word 3000ms both;
+}
+.loader .word--1 {
+  animation-delay: 1000ms;
+}
+.loader .word--2 {
+  animation-delay: 2000ms;
+}
+.loader .word--3 {
+  animation-delay: 3000ms;
 }
 
 @keyframes loader {
@@ -130,7 +131,7 @@ ul {
 }
 
 .word3 {
-  webkit-animation-delay: 3000ms;
+  -webkit-animation-delay: 3000ms;
   animation-delay: 3000ms;
   color: #afabc7;
 }
@@ -159,7 +160,7 @@ ul {
   border-radius: 50%;
   border: 6px solid white;
   border-color: white transparent white transparent;
-  animation: dual-ring 1200ms 800ms linear forwards;
+  animation: duree 1200ms 800ms linear forwards;
 }
 
 @keyframes duree {
