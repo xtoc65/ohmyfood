@@ -18,13 +18,6 @@
     $vert: #2c9c81;
     $vertclaire: #99E2D0; 
 
-//Animations
-
-$num-word: 3;
-$anim-dur: 3000ms;
-$anim-delay: $anim-dur / $num-word;
-
-$num-dishes: 13;
 
 %display1
 {
@@ -123,61 +116,44 @@ ul
 
 .loader
 {
+    @extend %display1; 
+    background: #494949fb;
+    position: fixed;
+    font-size: 5rem;
     inset: 0;
     z-index: 1;
     width: 100%;
-    height: 100vh;
-    background: #353535;
-    @extend %display1;
-    animation: loader 1000ms $anim-dur+1000ms ease-in-out forwards;
-	& .word
+    height: 100%;
+}
+.word
+{
+    opacity: 0;
+    font-family: "Shrikhand", sans-serif;
+    &:nth-of-type(1)
     {
-		font-family: 'Shrikhand', sans-serif;
-		font-size: 5rem;
-		animation: word $anim-dur both;	
-        
-		@for $i from 1 through $num-word{	
-            &--#{$i}{
-                animation-delay: $anim-delay*$i;
-            }
-        }
-	}
+        animation: go 2s ease forwards;
+        color: $mauve;   
+    }
+    &:nth-of-type(2)
+    {    
+        animation: go 2s ease forwards;
+        animation-delay: 1s;
+        color: #c0bbd8;
+    }
+    &:nth-of-type(3)
+    {
+        animation: go 2s ease forwards;
+        animation-delay: 2s;
+        color: #afabc7;
+    }
 }
-@keyframes loader 
+
+@keyframes go
 {
-	0%{
-		opacity: 1;
-	}
-	100%{
-		opacity: 0;
-		height: 0;
-		visibility: hidden;
-	}
-}
-.word1
-{
-    -webkit-animation-delay: 1000ms;
-    animation-delay: 1000ms;
-    color: $mauve;
-}
-.word2
-{    
-    -webkit-animation-delay: 2000ms;
-    animation-delay: 2000ms;
-    color: #c0bbd8;
-}
-.word3
-{
-    -webkit-animation-delay: 3000ms;
-    animation-delay: 3000ms;
-    color: #afabc7;
-}
-@keyframes word
-{
-	0%{
+	from{
 		opacity: 0;
 	}
-	100%{
+	to{
 		opacity: 1;
 	}
 }
@@ -204,13 +180,12 @@ ul
 
 @keyframes duree
 {
-	0% {
+	from {
 	  transform: rotate(0deg);
+      opacity: 1;
 	}
-	70%{
-		opacity: 1;
-	}
-	100% {
+
+	to{
 		transform: rotate(360deg);
 		opacity: 0;
 	}
