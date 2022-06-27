@@ -118,7 +118,7 @@ ul
 {
     @extend %display1; 
     background: #494949fb;
-    position: fixed;
+    // position: fixed;
     font-size: 5rem;
     inset: 0;
     z-index: 1;
@@ -613,8 +613,34 @@ h3
 
 .fa-check-circle
 {
-    
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 2rem;
+    // color: #fff;
+    font-weight: 900;
+    -webkit-animation: slide-left 1.5s;
+	animation: slide-left 1.5s;    
+    @-webkit-keyframes slide-left {
+        0% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+        }
+        100% {
+          -webkit-transform: translateX(-100px);
+                  transform: translateX(-100px);
+        }
+      }
+      @keyframes slide-left {
+        0% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+        }
+        100% {
+          -webkit-transform: translateX(-100px);
+                  transform: translateX(-100px);
+        }
+      }
 }
 .bouton
 {
