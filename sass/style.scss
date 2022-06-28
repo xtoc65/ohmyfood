@@ -587,11 +587,7 @@ legend
     font-size: inherit;
     transform: scale(1);
     transition-property: transform;
-    transition-duration: 400ms;
-    &:hover 
-    {
-        transform: scale(1.05);
-    }
+    transition-duration: 400ms;    
 }
 
 .slide 
@@ -667,7 +663,7 @@ legend
     & > i 
     {
         color: #99e2d0;
-        padding: 0.5rem;
+        padding: 0.7rem;
         border-radius: 50%;
         background: white;
         transition-duration: 0.5s;
