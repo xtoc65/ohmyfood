@@ -478,8 +478,15 @@ legend {
   max-width: 100%;
   overflow: hidden;
 }
+.descript1 h3 {
+  margin: 0 0 1rem 0;
+}
 .descript1 p {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .texte {
@@ -487,9 +494,6 @@ legend {
   margin-left: 1rem;
   max-width: 100%;
   overflow: hidden;
-}
-.texte h3 {
-  margin: 0 0 1rem 0;
 }
 .texte > * {
   white-space: nowrap;

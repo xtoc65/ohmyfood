@@ -616,10 +616,18 @@ legend
 	display: flex;
     max-width: 100%;
      overflow: hidden;
-    p
-    {
+     h3
+     {
+         margin: 0 0 1rem 0;
+     }
+     p
+     {
         @extend %display7;
         margin: 0;
+         white-space: nowrap;
+         overflow: hidden;
+         -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;    
     } 
 }
 .texte 
@@ -627,11 +635,7 @@ legend
     width: 100%;
     margin-left: 1rem;
     max-width: 100%;
-    overflow: hidden;
-    h3
-    {
-        margin: 0 0 1rem 0;
-    }
+    overflow: hidden;   
     & > *
     {
         white-space: nowrap;
