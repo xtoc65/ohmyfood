@@ -436,6 +436,11 @@ legend {
   margin: 0 0 1rem 0;
 }
 
+.resto input {
+  position: absolute;
+  left: -999px;
+}
+
 .card {
   cursor: pointer;
   background-color: white;
@@ -453,50 +458,87 @@ legend {
   transform: scale(1.05);
 }
 
-.resto input {
-  position: absolute;
-  left: -999px;
+.slide {
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
 }
-
-h3 {
-  margin: 0 0 1rem 0;
+.slide:hover .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.slide:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
 }
 
 .descript1 {
   padding: 0.6rem 0.5rem;
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
 }
 .descript1 p {
   margin: 0;
 }
 
-.fa-check-circle {
+.texte {
+  width: 100%;
+  margin-left: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.texte h3 {
+  margin: 0 0 1rem 0;
+}
+.texte > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.price {
   display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  font-size: 2rem;
-  font-weight: 900;
-  -webkit-animation: slide-left 1.5s;
-  animation: slide-left 1.5s;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 100%;
+  margin-left: 0.5rem;
 }
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
+
+.icone {
+  width: 7rem;
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -7rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
+.icone > i {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
+
+input:checked ~ .container .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+input:checked ~ .container i {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: rotate(360deg);
 }
 
 .bouton {
