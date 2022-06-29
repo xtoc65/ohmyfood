@@ -80,6 +80,8 @@ ul {
 }
 
 .loader {
+  flex-wrap: wrap;
+  padding: 0 11rem;
   background: rgba(73, 73, 73, 0.9843137255);
   position: fixed;
   font-size: 5rem;
@@ -101,6 +103,10 @@ ul {
   }
 }
 
+.loader1 {
+  display: flex;
+}
+
 .word {
   opacity: 0;
   font-family: "Shrikhand", sans-serif;
@@ -119,7 +125,6 @@ ul {
   animation-delay: 2s;
   color: #afabc7;
 }
-
 @keyframes go {
   from {
     opacity: 0;
@@ -128,20 +133,14 @@ ul {
     opacity: 1;
   }
 }
-.gt {
-  opacity: 0;
-  animation: gt 4s forwards;
-}
-@keyframes gt {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.fa-utensils {
+  position: absolute;
+  top: 45rem;
+  background-image: linear-gradient(0deg, rgba(173, 127, 160, 0.7019607843), #d1cde4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .duree {
@@ -173,6 +172,22 @@ ul {
     opacity: 0;
   }
 }
+.gt {
+  opacity: 0;
+  animation: gt 4s forwards;
+}
+@keyframes gt {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* header */
 .logo {
   font-family: "Shrikhand", cursive;
