@@ -184,8 +184,11 @@ ul
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    &:before 
+    {
+        content: inherit;
+    }
 }
-
 .duree
 {
     position: absolute;

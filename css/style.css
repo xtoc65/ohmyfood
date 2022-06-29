@@ -142,6 +142,9 @@ ul {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+.fa-utensils:before {
+  content: inherit;
+}
 
 .duree {
   position: absolute;
