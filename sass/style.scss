@@ -796,7 +796,7 @@ button
          left: 40%;
      }
 
-     /* Formulaire */
+    /* Formulaire */
     #h1
     {
         justify-content: center;
@@ -805,10 +805,11 @@ button
     {
         display: flex;
         justify-content: center; 
+        flex-wrap: wrap;
     }
     .card
     {
-        width: 320px;
+        width: 330px;
     }
     legend
     {

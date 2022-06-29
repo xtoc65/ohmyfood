@@ -638,9 +638,10 @@ button :hover {
   .carte {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .card {
-    width: 320px;
+    width: 330px;
   }
   legend {
     width: 10%;
