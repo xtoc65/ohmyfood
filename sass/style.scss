@@ -493,7 +493,6 @@ footer
     background-color: $noir;
     color: $blanc;
     padding: 6rem 0 2rem;
-    position: relative;
     h2
     {  
         @extend %display6;
@@ -634,6 +633,34 @@ legend
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;    
+}
+
+.slidedown
+{
+    animation: slidedown 5s;
+    &:nth-of-type(1)
+    {
+        animation: slidedown 5s ease forwards; 
+    }
+    &:nth-of-type(2) {
+        animation: slidedown 5s ease forwards;
+        animation-delay: 2.5s;
+      }
+    &:nth-of-type(3) {
+        animation: slidedown 5s ease forwards;
+        animation-delay: 5s;
+      }
+}
+@keyframes slidedown
+{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .slide 
