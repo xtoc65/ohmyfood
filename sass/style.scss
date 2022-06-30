@@ -97,9 +97,8 @@ ul
 .loader
 {
     @include flex (center);  
-    // flex-wrap: wrap;
     padding: 0 11rem;   
-    background: #494949fb;
+    background: #f2f2f2;
     position: fixed;
     font-size: 5rem;
     inset: 0;
@@ -119,10 +118,6 @@ ul
             opacity: 0;
         }
     }
-}
-.loader1
-{
-    display: flex (center);
 }
 
 .word
@@ -157,19 +152,6 @@ ul
     }
 }
 
-.fa-utensils
-{
-    position: absolute;
-    top: 45rem;
-    background-image: linear-gradient(0deg,#ad7fa0b3, #d1cde4);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    &:before 
-    {
-        content: inherit;
-    }
-}
 .duree
 {
     position: absolute;
@@ -457,6 +439,7 @@ article
         
         /*affiche le dégradé comme une couleur de texte  */
         -webkit-background-clip: text; 
+        background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
     }
@@ -468,6 +451,7 @@ article
     opacity: 100%;
     background: linear-gradient(0deg,$rose,$violet);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
@@ -604,6 +588,7 @@ legend
 {
     position:absolute;
     left:-999px;
+    
 }
 
 .card
@@ -612,30 +597,17 @@ legend
     background-color: $blanc;
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 30%);
     border-radius: 2rem;
-    padding: 0 1.5rem 0 1rembb;
     margin-bottom: 1rem;
     position: inherit;
     font-size: inherit;
     transform: scale(1);
     transition-property: transform;
-    transition-duration: 400ms;    
+    transition-duration: 400ms;
 }
 
 .slidedown
 {
     animation: slidedown 5s;
-    &:nth-of-type(1)
-    {
-        animation: slidedown 5s ease forwards; 
-    }
-    &:nth-of-type(2) {
-        animation: slidedown 5s ease forwards;
-        animation-delay: 2.5s;
-      }
-    &:nth-of-type(3) {
-        animation: slidedown 5s ease forwards;
-        animation-delay: 5s;
-      }
 }
 @keyframes slidedown
 {
@@ -670,7 +642,7 @@ legend
 
 .descript1 
 {
-    padding: 0.6rem 0.5rem;
+    padding: 0.6rem 0;
     width: 100%;
 	display: flex;
     max-width: 100%;
@@ -707,17 +679,21 @@ legend
     margin-right: 1rem;
     max-width: 100%; 
     margin-left: 0.5rem;
+    // position: relative;
 }
 .icone 
 {
-    width: 7rem;
+    width: 0;
     background: #99e2d0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -7rem;
+    margin-right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    // position: absolute;
+    // right: 1rem;
+    // top : 1em;
     & > i 
     {
         color: #99e2d0;
@@ -725,21 +701,24 @@ legend
         border-radius: 50%;
         background: white;
         transition-duration: 0.5s;
+        opacity: 0;
    }
 }
-input:checked ~ .icone
+.slide:hover .icone
 {
+    width: 7rem;
     margin-right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
   
-input:checked ~ i
+.slide:hover i
 {
     margin-right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transform: rotate(360deg);
+    opacity: 1;
 }    
 
 .bouton

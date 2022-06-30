@@ -50,7 +50,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 0 11rem;
-  background: rgba(73, 73, 73, 0.9843137255);
+  background: #f2f2f2;
   position: fixed;
   font-size: 5rem;
   inset: 0;
@@ -69,10 +69,6 @@ ul {
   100% {
     opacity: 0;
   }
-}
-
-.loader1 {
-  display: flex center;
 }
 
 .word {
@@ -100,18 +96,6 @@ ul {
   to {
     opacity: 1;
   }
-}
-
-.fa-utensils {
-  position: absolute;
-  top: 45rem;
-  background-image: linear-gradient(0deg, rgba(173, 127, 160, 0.7019607843), #d1cde4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.fa-utensils:before {
-  content: inherit;
 }
 
 .duree {
@@ -368,6 +352,7 @@ article img {
   background-image: linear-gradient(0deg, #ff79da, #9356dc);
   /*affiche le dégradé comme une couleur de texte  */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -376,6 +361,7 @@ article img {
   opacity: 100%;
   background: linear-gradient(0deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -500,7 +486,6 @@ legend {
   background-color: white;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
-  padding: 0 1.5rem 0 1rembb;
   margin-bottom: 1rem;
   position: inherit;
   font-size: inherit;
@@ -511,17 +496,6 @@ legend {
 
 .slidedown {
   animation: slidedown 5s;
-}
-.slidedown:nth-of-type(1) {
-  animation: slidedown 5s ease forwards;
-}
-.slidedown:nth-of-type(2) {
-  animation: slidedown 5s ease forwards;
-  animation-delay: 2.5s;
-}
-.slidedown:nth-of-type(3) {
-  animation: slidedown 5s ease forwards;
-  animation-delay: 5s;
 }
 
 @keyframes slidedown {
@@ -551,7 +525,7 @@ legend {
 }
 
 .descript1 {
-  padding: 0.6rem 0.5rem;
+  padding: 0.6rem 0;
   width: 100%;
   display: flex;
   max-width: 100%;
@@ -587,12 +561,12 @@ legend {
 }
 
 .icone {
-  width: 7rem;
+  width: 0;
   background: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -7rem;
+  margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
@@ -602,19 +576,22 @@ legend {
   border-radius: 50%;
   background: white;
   transition-duration: 0.5s;
+  opacity: 0;
 }
 
-input:checked ~ .icone {
+.slide:hover .icone {
+  width: 7rem;
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
 
-input:checked ~ i {
+.slide:hover i {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transform: rotate(360deg);
+  opacity: 1;
 }
 
 .bouton {
