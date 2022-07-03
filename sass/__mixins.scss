@@ -1,0 +1,19 @@
+@mixin flex ($jc) {
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+}
+@mixin flex2{
+     display: flex;
+    justify-content: center; 
+}
+@mixin flex3 ($a-i)
+{
+    display: flex;
+    align-items: $a-i;
+    flex-direction: column;
+}
+@mixin center {
+    display: flex;
+    align-items: center; 
+}

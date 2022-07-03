@@ -1,0 +1,63 @@
+/* footer */
+
+footer
+{
+    background-color: $noir;
+    color: $blanc;
+    padding: 6rem 0 2rem;
+    h2
+    {  
+        @include flex3 (baseline);
+        margin: 0 0 2rem;
+        @media (min-width: 768px)
+        {
+            display: flex;
+            justify-content: center; 
+            flex-direction: inherit;
+            margin: 0 0 0.5rem 1rem; 
+        }
+    }
+
+    ul
+    {
+        @include flex3 (baseline);    
+        margin: auto;
+        @media (min-width: 768px)
+        {
+            align-items: center;
+        }
+    }
+
+    li
+    {
+        margin-bottom: 0.5rem;
+    }
+
+    li:hover
+    {
+        color: $mauve;
+        
+    }
+}
+#pad
+{
+    padding: 2rem 0 2rem;
+}
+
+.fa-utensils
+{
+   margin-right: 1.5rem; 
+   @media (min-width: 768px)
+    {
+        margin-right: 0.5rem; 
+    }
+}
+
+.fa-hands-helping
+{
+    margin-right: 1rem; 
+    @media (min-width: 768px)
+    {
+        margin-right: 0.5rem; 
+    }
+}
