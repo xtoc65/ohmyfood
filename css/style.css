@@ -95,18 +95,28 @@
     margin: 0 2rem 0 0;
   }
 }
-.menus .carte legend {
+.menus .carte h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
   text-transform: uppercase;
-  border-bottom: 0.3rem solid #99E2D0;
-  display: block;
-  width: 5%;
-  margin: 0 0 1rem 0;
+  font-weight: 400;
+  position: relative;
+  margin-left: 15px;
+  text-align: initial;
   animation: slidedown 1.5s;
 }
+.menus .carte h3::after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -10px;
+  left: 1px;
+}
 @media (min-width: 768px) {
-  .menus .carte legend {
+  .menus .carte h3 {
     width: 10%;
-    margin: 1rem 0;
   }
 }
 @keyframes slidedown {
